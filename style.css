@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", "Roboto Mono", "sans-serif";
 }
 
 html {
@@ -12,11 +13,6 @@ html {
 body {
   background: #09090A;
   color: #FFF;
-
-  display: grid;
-  place-items: center;
-
-  height: 100vh;
 }
 
 a {
@@ -29,4 +25,95 @@ button {
 
 img {
   max-width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  padding: 4.8rem;
+}
+
+.registerDay {
+  background-color: transparent;
+  color: #FFF;
+
+  font-family: "Inter";
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+
+  gap: 1.2rem;
+
+  padding: 1.6rem 2.4rem;
+  border-radius: 8px;
+  border: 1px solid #8B5CF6;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 6.4rem;
+  height: 6.4rem;
+
+  border-radius: 8px;
+  border: 2px solid #27272A;
+  background-color: #18181B;
+}
+
+input:checked {
+  background-color: #8B5CF6;
+  border: 2px solid #A78BFA;
+}
+
+form {
+  display: flex;
+
+  padding: 0 4.8rem;
+}
+
+.habits {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  gap: 2.4rem;
+}
+
+.habit {
+  width: 6.4rem;
+  height: 6.4rem;
+
+  font-size: 3.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.days {
+  display: flex;
+  gap: 4.8rem;
+  margin-left: 3.2rem;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.day div {
+  margin-bottom: 0.8rem;
+
+  font-family: "Roboto Mono";
+  font-weight: 700;
+  font-size: 2rem;
+
+  text-align: center;
+  color: #A1A1AA;
 }
