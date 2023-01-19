@@ -13,6 +13,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
 
+    <script
+    src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js" defer></script>
     <script src="./index.js" defer></script>
 
     <title>Nlw Setup Habits</title>
@@ -25,7 +27,10 @@
 
     <button class="registerDay">
       <img src="./images/plus.svg" alt="Registrar seu dia">
-      Registrar o meu dia
+     
+      <div>
+        Registrar o meu dia
+      </div>
     </button>
   </header>
 
@@ -33,34 +38,17 @@
   <form> 
    
     <div class="habits">
-      <div class="habit">🏃‍♂️</div>
-      <div class="habit">💧</div>
-      <div class="habit">💪</div>
-      <div class="habit">💤</div>
+      <div class="habit" data-name="run">🏃‍♂️</div>
+      <div class="habit" data-name="water">💧</div>
+      <div class="habit" data-name="strong">💪</div>
+      <div class="habit" data-name="food">🍎</div>
+      <div class="habit" data-name="sleep">💤</div>
     </div>
 
     <div class="days">
-      <div class="day">
-        <div>03/01</div>
-        <input type="checkbox" name="run">
-        <input type="checkbox" name="water">
-        <input type="checkbox" name="strong">
-        <input type="checkbox" name="spleep">
-      </div>
-      <div class="day">
-        <div>04/01</div>
-        <input type="checkbox" name="run">
-        <input type="checkbox" name="water">
-        <input type="checkbox" name="strong">
-        <input type="checkbox" name="spleep">
-      </div>
     </div>
 
   </form>
-
-
-</div>
-  
   
 </body>
 </html>
