@@ -1,13 +1,28 @@
 const form = document.querySelector("form");
+const button = document.querySelector(".registerDay");
 const nlwSetup = new NLWSetup(form);
 
-const data = {
-  run: ['01-01', '01-02', '01-06'],
-  water: ['01-04', '01-05'],
-  food: ['01-01', '01-03'],
-  strong: ['01-01', '01-02', '01-03', '01-04', '01-05'],
-  sleep: ['01-03']
+button.addEventListener('click', add)
+form.addEventListener('change', save)
+
+function add() {
+  
+  const today = new Date().toLocaleDateString('pt-br').slice(0, 5);
+
+  const dayExists = nlwSetup.dayExists(today);
+
+  if(dayExists) {
+    alert('Dia já incluso')
+    return;
+  }
+
+  nlwSetup.addDay(today)
 }
 
+function save() {
+  localStorage.setItem('day', JSON.stringify(nlwSetup.data))
+}
+
+const data = JSON.parse(localStorage.getItem('day')) || {}
 nlwSetup.setData(data);
 nlwSetup.load()
