@@ -6,7 +6,7 @@
  <ul>
   <li>Pode registrar certas atividades do dia</li>
   <li>Dados ficam salvos no LocalStorage do navegador</li>
-  <li>Cada dia você poderá abriar a aplicação para manter sua rotina</li>
+  <li>Cada dia você poderá abrir a aplicação para manter sua rotina</li>
  </ul>
  
  <h1>Deploy
